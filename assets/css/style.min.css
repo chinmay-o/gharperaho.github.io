@@ -3937,7 +3937,7 @@ textarea:focus {
 .icon-box .content .link i {
   font-size: 16px;
   line-height: 14px;
-  margin-left: 14px
+  margin-right: 8px;
 }
 
 .icon-box:hover {

@@ -39,3 +39,151 @@
 
   color: #ffffff !important;
 }
+
+.custom-icon {
+
+  max-width: 100px;
+}
+
+.custom-prop-manag-title {
+
+  color: #fff9e0 !important;
+}
+
+.custom-prop-manag-bg {
+
+  background-color: #1791b5 !important;
+}
+
+.custom-prop-manag-bg .desc p {
+
+  color: #533c5e !important;
+}
+
+.custom-service-icon {
+
+  max-width: 80px;
+  margin-top: 20px;
+  margin-right: -10px;
+}
+
+.custom-service-precaus {
+
+  max-width: 60px;
+  margin-right: 24px;
+}
+
+.custom-safety-measure {
+
+  margin-bottom: 32px !important;
+  z-index: -1 !important;
+}
+
+.custom-movers-icon {
+
+  max-width: 152px;
+}
+
+.custom-popup-img {
+
+  margin-top: 48px !important;
+}
+
+.list-a-property-popup {
+
+  display: none;
+}
+
+.post-a-property-mobile {
+
+  display: none;
+}
+
+.prop-management-popup {
+
+  display: none;
+}
+
+.interior-popup {
+
+  display: none;
+}
+
+.join-us-service-popup {
+
+  display: none;
+}
+
+.book-now-service-popup {
+
+  display: none;
+}
+
+.packer-mover-service-popup {
+
+  display: none;
+}
+
+.home-services-list-gpr .desc p {
+
+  min-height: 100px;
+}
+
+.packer-mover-custom .link {
+
+    margin-right: 32px;
+}
+
+.secondary-option {
+
+  margin-left: 20px;
+}
+
+.packer-contact {
+
+  margin-top: 50px !important;
+}
+
+.interior-contact-icon i {
+
+  margin-right: 8px;
+}
+
+.interior-contact-icon .secondary-option {
+
+  margin-left: 20px;
+}
+
+.interior-contact-icon a:hover {
+
+  color: #20ad96;
+}
+
+.home-services-list-gpr i {
+
+  margin-right: 8px;
+}
+
+.home-services-list-gpr a:hover {
+
+  color: #20ad96;
+}
+
+@media screen and (max-width: 500px) {
+
+    .post-a-property {
+
+      display: none;
+    }
+
+    .post-a-property-mobile {
+
+      display: grid;
+      margin-top: 24px;
+    }
+
+    .service-property-manage {
+
+      padding-top: 80px !important;
+    }
+}
