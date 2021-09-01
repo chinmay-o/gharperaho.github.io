@@ -563,16 +563,16 @@
           </div>
           <div class="col-lg-8">
             <div class="contact-form pl-90 pl-md-0 pl-sm-0 pl-xs-0">
-              <form action="#" id="contact-form" method="post">
+              <form id="contact-form">
                 <div class="row max-mb-n30">
                   <div class="col-md-6 col-12 max-mb-30">
-                    <input type="text" placeholder="Your Name *" name="name">
+                    <input type="text" placeholder="Your Name *" required name="name">
                   </div>
                   <div class="col-md-6 col-12 max-mb-30">
-                    <input type="email" placeholder="Mobile Number *" name="mobile">
+                    <input type="text" placeholder="Mobile Number *" required name="mobile">
                   </div>
                   <div class="col-md-12 col-12 max-mb-30">
-                    <input type="text" placeholder="Subject *" name="subject">
+                    <input type="text" placeholder="Subject" name="subject">
                   </div>
                   <div class="col-12 text-left max-mb-30">
                     <button class="btn btn-primary btn-hover-secondary btn-width-180 btn-height-60">Submit</button>
@@ -679,22 +679,22 @@
                   <h6 class="sub-title">List a Property</h6>
                   <h2 class="title">Content about data</h2>
                   <div class="freecourse-download-form">
-                    <form action="#">
+                    <form id="property-list-form">
                       <div class="row max-mb-n20">
                         <div class="col-6 max-mb-20">
-                          <input type="text" placeholder="Name">
+                          <input type="text" required name="name" placeholder="Name">
                         </div>
                         <div class="col-6 max-mb-20">
-                          <input type="text" placeholder="Mobile Number">
+                          <input type="text" name="mobile" required placeholder="Mobile Number*">
                         </div>
                         <div class="col-6 max-mb-20">
-                          <input type="email" placeholder="Your E-mail">
+                          <input type="email" name="email" placeholder="Your E-mail">
                         </div>
                         <div class="col-6 max-mb-20">
-                          <input type="text" placeholder="Location">
+                          <input type="text" name="location" placeholder="Location">
                         </div>
                         <div class="col-12 max-mb-20">
-                          <input type="text" placeholder="BHK Option">
+                          <input type="text" name="description" placeholder="BHK Option">
                         </div>
                         <div class="col-12 max-mb-20">
                           <button class="btn btn-primary btn-hover-secondary w-100">Submit</button>
@@ -782,6 +782,7 @@
   <!-- Main Activation JS -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/forms.js"></script>
 
 </body>
 
