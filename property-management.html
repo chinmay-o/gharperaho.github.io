@@ -92,7 +92,7 @@
 
                   <!-- Post a Property Button -->
                   <div id="prop-manage-contact" class="post-a-property">
-                    <a href="#" class="btn btn-primary btn-hover-secondary"> Reach Us </a>
+                    <a class="btn btn-primary btn-hover-secondary"> Reach Us </a>
                   </div>
                   <!-- End Post a Property Button -->
 
@@ -593,18 +593,19 @@
               <div class="col-md-7 col-12 align-self-center">
                 <div class="freecourse-popup-content">
                   <h6 class="sub-title">Contact Us</h6>
-                  <h2 class="title">Content about data</h2>
+                  <h2 class="title">Manage Your Properties with GharPeRaho</h2>
                   <div class="freecourse-download-form">
                     <form id="property-management-form">
                       <div class="row max-mb-n20">
+                        <input type="hidden" name="Property Management">
                         <div class="col-6 max-mb-20">
-                          <input type="text" name="name" placeholder="Name">
+                          <input type="text" name="Name" placeholder="Name*" required>
                         </div>
                         <div class="col-6 max-mb-20">
-                          <input type="text" name="mobile" placeholder="Mobile Number">
+                          <input type="text" name="Mobile" placeholder="Mobile Number*" required>
                         </div>
                         <div class="col-12 max-mb-20">
-                          <input type="text" name="description" placeholder="Property Type">
+                          <input type="text" name="Description" placeholder="Property Type">
                         </div>
                         <div class="col-12 max-mb-20">
                           <button class="btn btn-primary btn-hover-secondary w-100">Submit</button>
@@ -613,6 +614,8 @@
                           <small class="form-text text-center"><i class="fal fa-lock-alt mr-2"></i> Your infomation will never be shared with any third party</small>
                         </div>
                       </div>
+                      <h6 class="success-alert message-form"><i class="far fa-check-circle mr-2"></i> Enquiry Successfully Submitted</h6>
+                      <h6 class="error-alert message-form"><i class="fas fa-exclamation-triangle mr-2"></i> Enquiry Submission Failed</h6>
                     </form>
                   </div>
                 </div>

@@ -144,6 +144,11 @@
   margin-top: 50px !important;
 }
 
+.interior-contact-icon {
+
+  margin-top: 10px;
+}
+
 .interior-contact-icon i {
 
   margin-right: 8px;
@@ -169,6 +174,32 @@
   color: #20ad96;
 }
 
+.message-form {
+
+  margin-top: 28px;
+  color: #696969;
+}
+
+.success-alert i {
+
+  color: #22ad97;
+}
+
+.error-alert i {
+
+  color: #d03200;
+}
+
+.success-alert {
+
+  display: none;
+}
+
+.error-alert {
+
+  display: none;
+}
+
 @media screen and (max-width: 500px) {
 
     .post-a-property {
@@ -185,5 +216,20 @@
     .service-property-manage {
 
       padding-top: 80px !important;
+    }
+
+    .ah-words-wrapper {
+
+      width: 100% !important;
+    }
+
+    .ah-words-wrapper b {
+
+      display: block !important;
+      margin: auto !important;
+      left: 0 !important;
+      right: 0 !important;
+      text-align: center !important;
+      color: #00ffd5 !important;
     }
 }
