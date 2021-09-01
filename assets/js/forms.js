@@ -2,7 +2,7 @@
 $("#contact-form").submit((e) => {
   e.preventDefault()
   $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbwKs0-fKl1SAfhOdxWQrg-61D9Ruo6OT9HPlB62NzPVHa1_SSCjg_X0_a3X3xlZLCNi/exec",
+    url: "https://script.google.com/macros/s/AKfycbyTZHDZu6_z22suURht7pgKKqokvNxp53hYLfua/exec",
     data: $("#contact-form").serialize(),
     type: "POST",
     success: function(response) {
@@ -19,7 +19,7 @@ $("#contact-form").submit((e) => {
 $("#property-list-form").submit((e) => {
   e.preventDefault()
   $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbwyad_F4sC3Bgjeax6DJjTMk5kzaM0bEodep_EvOafxm03-S1VN3QkDIaYvIWXbsHXi/exec",
+    url: "https://script.google.com/macros/s/AKfycbxe9VV0Pps1Lz8o1UyCGEmO9ODpleTHLyXsBpLws3BMHCMO7lk/exec",
     data: $("#property-list-form").serialize(),
     type: "POST",
     success: function(response) {
@@ -36,7 +36,7 @@ $("#property-list-form").submit((e) => {
 $("#property-management-form").submit((e) => {
   e.preventDefault()
   $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbzROSGYo7SnvgXHa1d915EHFvVd3Ppa8IHXGCFIwgwE4WetlyyYel8JR4YGWULuuxU/exec",
+    url: "https://script.google.com/macros/s/AKfycby8BU8RGnOa8DzvgR7K76tYzkixnZQnagGotzEk/exec",
     data: $("#property-management-form").serialize(),
     type: "POST",
     success: function(response) {
@@ -53,7 +53,7 @@ $("#property-management-form").submit((e) => {
 $("#interior-enquiry-form-one").submit((e) => {
   e.preventDefault()
   $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbzAplIeDwPyFDFWFBKzsUmYJIYqtgh_VogCZzsDxQ7KycOQgoMX0fRnA5QJndqQcLdK/exec",
+    url: "https://script.google.com/macros/s/AKfycbzivzT9Rz8yEc-DuXRNElKS2M6sXniorIxD21I1/exec",
     data: $("#interior-enquiry-form-one").serialize(),
     type: "POST",
     success: function(response) {
@@ -70,7 +70,7 @@ $("#interior-enquiry-form-one").submit((e) => {
 $("#interior-enquiry-form-two").submit((e) => {
   e.preventDefault()
   $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbzAplIeDwPyFDFWFBKzsUmYJIYqtgh_VogCZzsDxQ7KycOQgoMX0fRnA5QJndqQcLdK/exec",
+    url: "https://script.google.com/macros/s/AKfycbzivzT9Rz8yEc-DuXRNElKS2M6sXniorIxD21I1/exec",
     data: $("#interior-enquiry-form-two").serialize(),
     type: "POST",
     success: function(response) {
@@ -87,7 +87,7 @@ $("#interior-enquiry-form-two").submit((e) => {
 $("#join-us-services").submit((e) => {
   e.preventDefault()
   $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbyYzRB4CKqDBRXUwd5wCiaXlgVzAYRBtuRaXuIK6hJ4eoTehFucnvfOM55P4xGy8rwzUw/exec",
+    url: "https://script.google.com/macros/s/AKfycbypre-DQwgGV3g-KlCk3Yh3VwgPsLhMcozXZZbLTA/exec",
     data: $("#join-us-services").serialize(),
     type: "POST",
     success: function(response) {
@@ -104,7 +104,7 @@ $("#join-us-services").submit((e) => {
 $("#book-service-enquiry").submit((e) => {
   e.preventDefault()
   $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbzbV90dF4VzTaB5aschY2akzizMwH9NSzKWeeNf8H3y5o-le0ZhNlwgQ_qt2UTdY4NR/exec",
+    url: "https://script.google.com/macros/s/AKfycby1urYXqccZJm8MJBbMcU6b4yQKYVlhgJb-zPe9/exec",
     data: $("#book-service-enquiry").serialize(),
     type: "POST",
     success: function(response) {
@@ -121,7 +121,7 @@ $("#book-service-enquiry").submit((e) => {
 $("#packers-movers-enquiry").submit((e) => {
   e.preventDefault()
   $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbyAy-5hMS5ILd2Ae8ySTl0OhXBIJdhyARS6gu35yH87z6SzL5zkFcUm2a8uyY26y7Ct/exec",
+    url: "https://script.google.com/macros/s/AKfycbz3aCcnHJfLtlDZd99kvcZJyW43KQIOiwHY0RaN/exec",
     data: $("#packers-movers-enquiry").serialize(),
     type: "POST",
     success: function(response) {
