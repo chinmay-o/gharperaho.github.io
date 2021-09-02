@@ -200,6 +200,16 @@
   display: none;
 }
 
+.right-box .event-button {
+
+  margin-top: 12px;
+}
+
+.installation-icons {
+
+  max-width: 60px;
+}
+
 @media screen and (max-width: 500px) {
 
     .post-a-property {
@@ -231,5 +241,10 @@
       right: 0 !important;
       text-align: center !important;
       color: #00ffd5 !important;
+    }
+
+    .right-box .event-button {
+
+      margin-top: 0;
     }
 }
