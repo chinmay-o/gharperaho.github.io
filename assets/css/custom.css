@@ -210,6 +210,11 @@
   max-width: 60px;
 }
 
+.footer-logo-gpr {
+
+  max-width: 160px;
+}
+
 @media screen and (max-width: 500px) {
 
     .post-a-property {
