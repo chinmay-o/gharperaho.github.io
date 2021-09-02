@@ -261,4 +261,9 @@
 
       margin-top: 0;
     }
+
+    .become-an-instructor-section .section-title span {
+
+      color: #00ffd5 !important;
+    }
 }
