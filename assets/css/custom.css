@@ -215,6 +215,15 @@
   max-width: 160px;
 }
 
+.page-not-header-logo {
+
+  display: block;
+  margin: auto;
+  width: 600px;
+
+  margin-top: 100px;
+}
+
 @media screen and (max-width: 500px) {
 
     .post-a-property {
