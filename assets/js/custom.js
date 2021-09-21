@@ -28,6 +28,8 @@ $("#list-a-property-mobile").click(function() {
     $(".max-popup-dialog").removeClass("fadeOutUp");
 });
 
+// know more button assign value
+var assignedValue = null;
 
 // Property Management
 $("#prop-manag-know-more").click(function() {
@@ -115,6 +117,111 @@ $("#services-book-now").click(function() {
     $(".book-now-service-popup .max-popup-dialog").removeClass("fadeOutUp");
 });
 
+
+// service-know-more-painting
+$("#services-more-painting").click(function() {
+
+    $(".services-more-popup").css("display", "flex");
+    $(".services-more-popup .max-popup-section").removeClass("close");
+    $(".services-more-popup .max-popup-dialog").removeClass("fadeOutUp");
+    assignedValue = 1;
+    referenceMessage(assignedValue);
+});
+
+// service-know-more-carpenter
+$("#services-more-carp").click(function() {
+
+    $(".services-more-popup").css("display", "flex");
+    $(".services-more-popup .max-popup-section").removeClass("close");
+    $(".services-more-popup .max-popup-dialog").removeClass("fadeOutUp");
+    assignedValue = 2;
+    referenceMessage(assignedValue);
+});
+
+// service-know-more-pest-control
+$("#services-more-pest").click(function() {
+
+    $(".services-more-popup").css("display", "flex");
+    $(".services-more-popup .max-popup-section").removeClass("close");
+    $(".services-more-popup .max-popup-dialog").removeClass("fadeOutUp");
+    assignedValue = 3;
+    referenceMessage(assignedValue);
+});
+
+// service-know-more-elctrical-service
+$("#services-more-electric").click(function() {
+
+    $(".services-more-popup").css("display", "flex");
+    $(".services-more-popup .max-popup-section").removeClass("close");
+    $(".services-more-popup .max-popup-dialog").removeClass("fadeOutUp");
+    assignedValue = 4;
+    referenceMessage(assignedValue);
+});
+
+// service-know-more-cleaning-sevice
+$("#services-more-clean").click(function() {
+
+    $(".services-more-popup").css("display", "flex");
+    $(".services-more-popup .max-popup-section").removeClass("close");
+    $(".services-more-popup .max-popup-dialog").removeClass("fadeOutUp");
+    assignedValue = 5;
+    referenceMessage(assignedValue);
+});
+
+// service-know-more-plumbing
+$("#services-more-plumb").click(function() {
+
+    $(".services-more-popup").css("display", "flex");
+    $(".services-more-popup .max-popup-section").removeClass("close");
+    $(".services-more-popup .max-popup-dialog").removeClass("fadeOutUp");
+    assignedValue = 6;
+    referenceMessage(assignedValue);
+});
+
+function referenceMessage(value) {
+
+    if (value == 1) {
+
+      $("#residential").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Residential%20Painting");
+      $("#commercial").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Commercial%20Painting");
+      $("#industrial").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Industrial%20Painting");
+    }
+
+    if (value == 2) {
+
+      $("#residential").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Residential%20Carpentry%20Service");
+      $("#commercial").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Commercial%20Carpentry%20Service");
+      $("#industrial").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Industrial%20Carpentry%20Service");
+    }
+
+    if (value == 3) {
+
+      $("#residential").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Residential%20Pest%20Control");
+      $("#commercial").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Commercial%20Pest%20Control");
+      $("#industrial").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Industrial%20Pest%20Control");
+    }
+
+    if (value == 4) {
+
+      $("#residential").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Residential%20Electrical%20Service");
+      $("#commercial").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Commercial%20Electrical%20Service");
+      $("#industrial").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Industrial%20Electrical%20Service");
+    }
+
+    if (value == 5) {
+
+      $("#residential").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Residential%20Cleaning%20Service");
+      $("#commercial").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Commercial%20Cleaning%20Service");
+      $("#industrial").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Industrial%20Cleaning%20Service");
+    }
+
+    if (value == 6) {
+
+      $("#residential").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Residential%20Plumbing%20Service");
+      $("#commercial").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Commercial%20Plumbing%20Service");
+      $("#industrial").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Industrial%20Plumbing%20Service");
+    }
+}
 
 // packer and movers
 $("#packer-contact-us-one").click(function() {

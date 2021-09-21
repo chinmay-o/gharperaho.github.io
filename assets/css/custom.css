@@ -119,6 +119,11 @@
   display: none;
 }
 
+.services-more-popup {
+
+  display: none;
+}
+
 .packer-mover-service-popup {
 
   display: none;
@@ -222,6 +227,35 @@
   width: 600px;
 
   margin-top: 100px;
+}
+
+.custom-service-more {
+
+  max-width: 30% !important;
+}
+
+@media screen and (max-width: 1190px) {
+
+  .custom-service-more {
+
+    max-width: 40% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .custom-service-more {
+
+    max-width: 50% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .custom-service-more {
+
+    max-width: 80% !important;
+  }
 }
 
 @media screen and (max-width: 500px) {
