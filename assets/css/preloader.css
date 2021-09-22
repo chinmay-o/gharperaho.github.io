@@ -4,6 +4,18 @@
   display: none;
 }
 
+#preloader {
+
+  position: relative;
+  top: 40%;
+}
+
+#preloader svg {
+
+  display: block;
+  margin: auto;
+}
+
 * {
   border: 0;
   box-sizing: border-box;
@@ -14,15 +26,15 @@
 :root {
   font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
 }
-
+/*
 body {
-  
+
   background: #e3e4e8;
   display: grid;
   font: 1em/1.5 sans-serif;
   place-items: center;
   height: 100vh;
-}
+} */
 
 .pl {
   width: 6em;
