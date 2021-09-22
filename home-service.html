@@ -36,6 +36,7 @@
 
   <!-- Custom Style CSS -->
   <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel="stylesheet" href="assets/css/preloader.css">
 
   <!-- Use the minified version files listed below for better performance and remove the files listed above -->
   <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
@@ -45,6 +46,17 @@
 </head>
 
 <body>
+
+  <div id="preloader">
+
+    <svg class="pl" width="240" height="240" viewBox="0 0 240 240">
+      <circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round" />
+      <circle class="pl__ring pl__ring--b" cx="120" cy="120" r="35" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 220" stroke-dashoffset="-110" stroke-linecap="round" />
+      <circle class="pl__ring pl__ring--c" cx="85" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round" />
+      <circle class="pl__ring pl__ring--d" cx="155" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round" />
+    </svg>
+
+  </div>
 
   <div id="page">
     <!-- Header Section Start -->
@@ -309,7 +321,7 @@
 
             <div class="row row-cols-lg-3 row-cols-1 max-mb-n30">
 
-                <a href="https://api.whatsapp.com/send?phone=918095470818&text=Water%20Purifier%20Service" class="col max-mb-30" data-aos="fade-up">
+                <a id="install-purifier" class="col max-mb-30" data-aos="fade-up">
                     <div class="event-list-box">
                         <div class="event-caption">
                             <div class="left-box">
@@ -327,7 +339,7 @@
                     </div>
                 </a>
 
-                <a href="https://api.whatsapp.com/send?phone=918095470818&text=Solar%20Energy%20Service" class="col max-mb-30" data-aos="fade-up">
+                <a id="install-solar-panel" class="col max-mb-30" data-aos="fade-up">
                     <div class="event-list-box">
                         <div class="event-caption">
                             <div class="left-box">
@@ -345,7 +357,7 @@
                     </div>
                 </a>
 
-                <a href="https://api.whatsapp.com/send?phone=918095470818&text=CCTV%20Service" class="col max-mb-30" data-aos="fade-up">
+                <a id="install-cctv" class="col max-mb-30" data-aos="fade-up">
                     <div class="event-list-box">
                         <div class="event-caption">
                             <div class="left-box">
@@ -363,7 +375,7 @@
                     </div>
                 </a>
 
-                <a href="https://api.whatsapp.com/send?phone=918095470818&text=Inverter%20Service" class="col max-mb-30" data-aos="fade-up">
+                <a id="install-ups" class="col max-mb-30" data-aos="fade-up">
                     <div class="event-list-box">
                         <div class="event-caption">
                             <div class="left-box">
@@ -381,25 +393,25 @@
                     </div>
                 </a>
 
-                <a href="https://api.whatsapp.com/send?phone=918095470818&text=Solar%20Heater%20Service" class="col max-mb-30" data-aos="fade-up">
+                <a id="install-security" class="col max-mb-30" data-aos="fade-up">
                     <div class="event-list-box">
                         <div class="event-caption">
                             <div class="left-box">
-                                <h3 class="title">Solar Water Heater <br>& Gheeser</h3>
+                                <h3 class="title">Safety <br>& Security</h3>
                             </div>
                             <div class="right-box">
                                 <!-- <div class="event-button">
                                     <a class="btn btn-primary btn-hover-secondary btn-xs" href="event-details.html">Book Now</a>
                                 </div> -->
                                 <div class="installation-icons">
-                                  <img src="assets/images/home-service-gpr/water-heater.png" alt="">
+                                  <img src="assets/images/home-service-gpr/security.png" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </a>
 
-                <a href="https://api.whatsapp.com/send?phone=918095470818&text=Automatic%20Water%20Controller%20Service" class="col max-mb-30" data-aos="fade-up">
+                <a id="install-water-control" class="col max-mb-30" data-aos="fade-up">
                     <div class="event-list-box">
                         <div class="event-caption">
                             <div class="left-box">
@@ -691,7 +703,7 @@
     </div>
     <!-- Newsletter Popup End -->
 
-    <!-- Book Now Popup Start -->
+    <!-- Service Popup Start -->
     <div class="services-more-popup">
       <div id="max-popup" class="max-popup-section section">
         <div class="max-popup-dialog animated custom-service-more fadeInUp">
@@ -714,6 +726,32 @@
                         <a id="industrial" href="#" class="btn btn-primary btn-hover-secondary w-100">Industrial</a>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Newsletter Popup End -->
+
+    <!-- Install Popup Start -->
+    <div class="install-popup">
+      <div id="max-popup" class="max-popup-section section">
+        <div class="max-popup-dialog animated custom-service-more fadeInUp">
+          <button class="max-popup-close"><i class="fal fa-times"></i></button>
+          <div class="max-popup-dialog-inner">
+            <div class="">
+              <div class=" align-self-center">
+                <div class="freecourse-popup-content">
+                  <h6 class="sub-title">Book your service</h6>
+                  <h2 class="title">Select your service specification.</h2>
+                  <div class="freecourse-download-form">
+                    <div class="max-mb-n20">
+                      <h1 id="install-content"></h1>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

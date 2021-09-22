@@ -124,6 +124,11 @@
   display: none;
 }
 
+.install-popup {
+
+  display: none;
+}
+
 .packer-mover-service-popup {
 
   display: none;

@@ -1,4 +1,10 @@
 
+setTimeout(function(){
+
+  $("#preloader").css("display", "none");
+  $("#page").css("display", "block");
+}, 3000);
+
 $("#home-explore").click(function() {
 
     $('html, body').animate({
@@ -30,6 +36,9 @@ $("#list-a-property-mobile").click(function() {
 
 // know more button assign value
 var assignedValue = null;
+
+// install more button assign value
+var assignedInstall = null;
 
 // Property Management
 $("#prop-manag-know-more").click(function() {
@@ -178,6 +187,67 @@ $("#services-more-plumb").click(function() {
     referenceMessage(assignedValue);
 });
 
+// Installation
+$("#install-purifier").click(function() {
+
+    $(".install-popup").css("display", "flex");
+    $(".install-popup .max-popup-section").removeClass("close");
+    $(".install-popup .max-popup-dialog").removeClass("fadeOutUp");
+    assignedInstall = 1;
+    referenceContent(assignedInstall);
+});
+
+// Solar Panels
+$("#install-solar-panel").click(function() {
+
+    $(".install-popup").css("display", "flex");
+    $(".install-popup .max-popup-section").removeClass("close");
+    $(".install-popup .max-popup-dialog").removeClass("fadeOutUp");
+    assignedInstall = 2;
+    referenceContent(assignedInstall);
+});
+
+// CCTV
+$("#install-cctv").click(function() {
+
+    $(".install-popup").css("display", "flex");
+    $(".install-popup .max-popup-section").removeClass("close");
+    $(".install-popup .max-popup-dialog").removeClass("fadeOutUp");
+    assignedInstall = 3;
+    referenceContent(assignedInstall);
+});
+
+// Inverter
+$("#install-ups").click(function() {
+
+    $(".install-popup").css("display", "flex");
+    $(".install-popup .max-popup-section").removeClass("close");
+    $(".install-popup .max-popup-dialog").removeClass("fadeOutUp");
+    assignedInstall = 4;
+    referenceContent(assignedInstall);
+});
+
+// Security System
+$("#install-security").click(function() {
+
+    $(".install-popup").css("display", "flex");
+    $(".install-popup .max-popup-section").removeClass("close");
+    $(".install-popup .max-popup-dialog").removeClass("fadeOutUp");
+    assignedInstall = 5;
+    referenceContent(assignedInstall);
+});
+
+// Auto Water Control
+$("#install-water-control").click(function() {
+
+    $(".install-popup").css("display", "flex");
+    $(".install-popup .max-popup-section").removeClass("close");
+    $(".install-popup .max-popup-dialog").removeClass("fadeOutUp");
+    assignedInstall = 6;
+    referenceContent(assignedInstall);
+});
+
+// Function With Refernce Message For Services More Button
 function referenceMessage(value) {
 
     if (value == 1) {
@@ -221,6 +291,65 @@ function referenceMessage(value) {
       $("#commercial").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Commercial%20Plumbing%20Service");
       $("#industrial").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Industrial%20Plumbing%20Service");
     }
+}
+
+// Function With Refernce HTML For Install Button
+function referenceContent(contentValue) {
+
+  if (contentValue == 1) {
+
+    document.getElementById("install-content").innerHTML =
+    '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Water%20Purifier%20Service%20for%20RO" class="btn btn-primary btn-hover-secondary w-100">RO</a></div>' +
+    '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Water%20Purifier%20Service%20for%20UV" class="btn btn-primary btn-hover-secondary w-100">UV</a></div>' +
+    '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Water%20Purifier%20Service%20for%20UF" class="btn btn-primary btn-hover-secondary w-100">UF</a></div>' +
+    '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Water%20Purifier%20Service%20for%20Alkaline" class="btn btn-primary btn-hover-secondary w-100">Alkaline</a></div>';
+  }
+
+  if (contentValue == 2) {
+
+    document.getElementById("install-content").innerHTML =
+    '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Solar%20Energy%20Service%20for%20Panels%20and%20Modules" class="btn btn-primary btn-hover-secondary w-100">Solar Panel/Solar Module</a></div>' +
+    '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Solar%20Energy%20Service%20for%20Water%20Heater" class="btn btn-primary btn-hover-secondary w-100">Solar Water Heater</a></div>' +
+    '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Solar%20Energy%20Service%20for%20Lights" class="btn btn-primary btn-hover-secondary w-100">Solar Lightings and Lanterns</a></div>' +
+    '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Solar%20Energy%20Service%20for%20Battery%20and%20UPS" class="btn btn-primary btn-hover-secondary w-100">Solar Inverter/Battery/UPS</a></div>';
+  }
+
+  if (contentValue == 3) {
+
+    document.getElementById("install-content").innerHTML =
+      '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Residential%20CCTV%20Service" class="btn btn-primary btn-hover-secondary w-100">Residential</a></div>' +
+      '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Commercial%20CCTV%20Service" class="btn btn-primary btn-hover-secondary w-100">Commercial</a></div>' +
+      '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Industrial%20CCTV%20Service" class="btn btn-primary btn-hover-secondary w-100">Industrial</a></div>';
+  }
+
+  if (contentValue == 4) {
+
+    document.getElementById("install-content").innerHTML =
+      '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Residential%20Inverter%20Service" class="btn btn-primary btn-hover-secondary w-100">Residential</a></div>' +
+      '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Commercial%20Inverter%20Service" class="btn btn-primary btn-hover-secondary w-100">Commercial</a></div>' +
+      '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Industrial%20Inverter%20Service" class="btn btn-primary btn-hover-secondary w-100">Industrial</a></div>';
+  }
+
+  if (contentValue == 5) {
+
+    document.getElementById("install-content").innerHTML =
+    '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Security%20Service%20for%20Theft%20Alarm" class="btn btn-primary btn-hover-secondary w-100">Burglar/Theft Alarm</a></div>' +
+    '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Security%20Service%20for%20Safety%20Doors" class="btn btn-primary btn-hover-secondary w-100">Safety Door/Lockers</a></div>' +
+    '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Security%20Service%20for%20Fire%20Alarm" class="btn btn-primary btn-hover-secondary w-100">Fire Alarm</a></div>' +
+    '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Security%20Service%20for%20Fingerprint%20Scanner" class="btn btn-primary btn-hover-secondary w-100">Fingerprint Scanner</a></div>' +
+    '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Security%20Service%20for%20Attendence%20System" class="btn btn-primary btn-hover-secondary w-100">Time Attendance System</a></div>' +
+    '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Security%20Service%20for%20Visitor%20Management" class="btn btn-primary btn-hover-secondary w-100">Visitor Management System</a></div>';
+
+  }
+
+  if (contentValue == 6) {
+
+    document.getElementById("install-content").innerHTML =
+      '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Residential%20Automatic%20Water-Level%20Service" class="btn btn-primary btn-hover-secondary w-100">Residential</a></div>' +
+      '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Commercial%20Automatic%20Water-Level%20Service" class="btn btn-primary btn-hover-secondary w-100">Commercial</a></div>' +
+      '<div class="col-12 max-mb-20"><a href="https://api.whatsapp.com/send?phone=918095470818&text=Industrial%20Automatic%20Water-Level%20Service" class="btn btn-primary btn-hover-secondary w-100">Industrial</a></div>';
+  }
+
 }
 
 // packer and movers
