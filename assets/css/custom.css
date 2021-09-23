@@ -1,5 +1,4 @@
 /* custom styles */
-
 .post-a-property {
 
   margin-right: 14px !important;
@@ -82,6 +81,11 @@
 .custom-movers-icon {
 
   max-width: 152px;
+}
+
+.join-us-service-popup img {
+
+  margin-top: 50px !important;
 }
 
 .custom-popup-img {
