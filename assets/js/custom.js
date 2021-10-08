@@ -1,9 +1,10 @@
-
+// 
 // setTimeout(function(){
 //
 //   $("#preloader").css("display", "none");
 //   $("#page").css("display", "block");
 // }, 3000);
+
 
 $("#home-explore").click(function() {
 
