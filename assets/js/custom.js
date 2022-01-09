@@ -1,4 +1,4 @@
-// 
+//
 // setTimeout(function(){
 //
 //   $("#preloader").css("display", "none");
@@ -188,6 +188,16 @@ $("#services-more-plumb").click(function() {
     referenceMessage(assignedValue);
 });
 
+// service-know-more-sanitize
+$("#services-more-sanitize").click(function() {
+
+    $(".services-more-popup").css("display", "flex");
+    $(".services-more-popup .max-popup-section").removeClass("close");
+    $(".services-more-popup .max-popup-dialog").removeClass("fadeOutUp");
+    assignedValue = 7;
+    referenceMessage(assignedValue);
+});
+
 // Installation
 $("#install-purifier").click(function() {
 
@@ -291,6 +301,13 @@ function referenceMessage(value) {
       $("#residential").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Residential%20Plumbing%20Service");
       $("#commercial").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Commercial%20Plumbing%20Service");
       $("#industrial").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Industrial%20Plumbing%20Service");
+    }
+
+    if (value == 7) {
+
+      $("#residential").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Residential%20Sanitizing%20Service");
+      $("#commercial").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Commercial%20Sanitizing%20Service");
+      $("#industrial").attr("href", "https://api.whatsapp.com/send?phone=918095470818&text=Industrial%20Sanitizing%20Service");
     }
 }
 
