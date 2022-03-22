@@ -44,6 +44,11 @@
   max-width: 100px;
 }
 
+.title-mob {
+
+  display: none;
+}
+
 .custom-prop-manag-title {
 
   color: #fff9e0 !important;
@@ -260,6 +265,26 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  .title-mob {
+
+    display: block;
+  }
+
+  .title-web {
+
+    display: none;
+  }
+
+  .content .link {
+
+    margin-top: 0px !important;
+  }
+
+  .desc p {
+
+    display: none;
+  }
 
   .custom-service-more {
 
