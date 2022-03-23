@@ -248,6 +248,12 @@
   max-width: 30% !important;
 }
 
+.service-icons-top {
+
+  padding-top: 60px !important;
+  padding-bottom: 100px !important;
+}
+
 @media screen and (max-width: 1190px) {
 
   .custom-service-more {
@@ -261,6 +267,12 @@
   .custom-service-more {
 
     max-width: 50% !important;
+  }
+
+  .service-icons-top {
+
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
   }
 }
 
@@ -289,6 +301,11 @@
   .custom-service-more {
 
     max-width: 80% !important;
+  }
+
+  .service-icons-top {
+
+    padding-top: 20px !important;
   }
 }
 
